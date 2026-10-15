@@ -1,5 +1,15 @@
 # @backstage/cli-module-test-jest
 
+## 0.1.7
+
+### Patch Changes
+
+- 824e835: Fixed `setupFilesAfterEnv` from the root `package.json` Jest configuration being shared between workspace packages, which caused each package's `src/setupTests` file to also be added to every other package.
+- 36e3f24: Fixed CommonJS frontend test execution with ESM dependencies on Node.js 24.
+- Updated dependencies
+  - @backstage/cli-node@0.3.5
+  - @backstage/cli-common@0.3.2
+
 ## 0.1.7-next.0
 
 ### Patch Changes
